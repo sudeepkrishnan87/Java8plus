@@ -68,4 +68,13 @@ public class PredicatesEx {
                }
         return filterList;
     }
+
+    public boolean isEqualFilter()
+    {
+        ArrayList<Player> playerList=ConstructPlayers();
+        Predicate<Player> objectCheck=Predicate.isEqual(playerList.get(0));
+        if(objectCheck.test(new Player(45,"Ronaldo","FootBall",BigInteger.valueOf(10000000),"Brazil")))       
+         return true;
+     return false;
+    }
 }

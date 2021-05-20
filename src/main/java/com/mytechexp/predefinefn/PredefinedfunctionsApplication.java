@@ -1,5 +1,6 @@
 package com.mytechexp.predefinefn;
 
+import com.mytechexp.predefinefn.predefinedfunctions.FunctionsEx;
 import com.mytechexp.predefinefn.predefinedfunctions.PredicatesEx;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,13 +10,19 @@ public class PredefinedfunctionsApplication {
 
 	
 	public static void main(String[] args) {
-     
-		PredicatesEx fn=new PredicatesEx();
+     //Remove the comment lines and test one be one
+		PredicatesEx p=new PredicatesEx();
 		
-		// System.out.println(fn.andfileter());
-		// System.out.println(fn.orfileter());
-		System.out.println(fn.negatefilter());
-		//SpringApplication.run(PredefinedfunctionsApplication.class, args);
+		// System.out.println(p.andfileter());
+		// System.out.println(p.orfileter());
+		//System.out.println(p.negatefilter());
+
+		//System.out.println(p.isEqualFilter());
+		
+
+		FunctionsEx fn=new FunctionsEx();
+		System.out.println(fn.functionFilter());
+		
 	}
 
 
