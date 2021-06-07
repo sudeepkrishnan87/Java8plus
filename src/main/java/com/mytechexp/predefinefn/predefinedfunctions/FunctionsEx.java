@@ -13,7 +13,7 @@ public class FunctionsEx {
  //Remove the commented lines to test it one by one 
 
    // return strLength.apply("sudeep");
-
+    //push
    return math1.andThen(math2).apply(2);
   //return math1.compose(math2).apply(2);
 
