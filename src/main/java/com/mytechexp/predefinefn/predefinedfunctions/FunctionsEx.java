@@ -14,8 +14,8 @@ public class FunctionsEx {
 
    // return strLength.apply("sudeep");
     //push
-   return math1.andThen(math2).apply(2);
-  //return math1.compose(math2).apply(2);
+   //return math1.andThen(math2).apply(2);
+  return math1.compose(math2).apply(2);
 
 
     }
