@@ -4,6 +4,7 @@ import com.mytechexp.predefinefn.predefinedfunctions.ConsumerEx;
 import com.mytechexp.predefinefn.predefinedfunctions.FunctionsEx;
 import com.mytechexp.predefinefn.predefinedfunctions.PredicatesEx;
 
+import com.mytechexp.predefinefn.predefinedfunctions.SupplierEx;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -30,9 +31,15 @@ public class PredefinedfunctionsApplication {
 
 		//Consumer Block
 
-		ConsumerEx consumer=new ConsumerEx();
-		consumer.consumerTest("Sudeep", "Krishnan");
-		
+		/*ConsumerEx consumer=new ConsumerEx();
+		consumer.consumerTest("Sudeep", "Krishnan");*/
+
+		//supplier block
+
+		SupplierEx supplier=new SupplierEx();
+		System.out.println(supplier.getTodaysDate());
+
+		System.out.println(supplier.passKey(6));
 	}
 
 
